@@ -1,0 +1,30 @@
+/* ===================================
+=colors
+=================================== */
+
+:root {
+  /* base variables (pas utilisées en CSS directement) */
+  --color-neutral-100: hsl(60, 3%, 6%);
+  --color-neutral-200: hsl(60, 3%, 12%);
+  --color-neutral-300: hsl(60, 3%, 24%);
+  --color-neutral-400: hsl(60, 3%, 42%);
+  --color-neutral-500: hsl(60, 3%, 60%);
+  --color-neutral-600: hsl(60, 3%, 72%);
+  --color-neutral-700: hsl(60, 3%, 84%);
+  --color-neutral-800: hsl(60, 3%, 98%);
+
+  --color-green-base: oklch(85% 0.11 174);
+  --color-green-base: oklch(66% 0.11 174);
+  --color-green-base: oklch(97% 0.11 174);
+
+  /* incident variables: utilisées en CSS */
+  --color-background-primary: var(--color-neutral-100);
+
+  --color-text-primary: var(--color-neutral-800);
+  --color-text-secondary: var(--color-neutral-500);
+  --color-text-highlight: white;
+
+  --color-accent: var(--color-green-base);
+  --color-accent-dark: var(--color-green-dark);
+  --color-accent-light: var(--color-green-light);
+}
