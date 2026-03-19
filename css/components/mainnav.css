@@ -1,0 +1,29 @@
+/* ===================================
+=mainnav
+=================================== */
+
+.mainnav {
+  --mainnav-gap: 36px;
+  --mainnav-link-color: var(--color-text-highlight);
+
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: var(--mainnav-gap);
+}
+
+.mainnav-link {
+  color: var(--mainnav-link-color);
+  transition: color 0.2s ease-out;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    --mainnav-link-color: var(--color-accent);
+  }
+}

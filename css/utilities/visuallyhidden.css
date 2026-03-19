@@ -1,0 +1,19 @@
+/* ===================================
+=visually hidden
+=================================== */
+
+/*
+- cache visuellement un element
+- celui-ci reste visible pour les screen readers
+*/
+
+.visually-hidden {
+  position: absolute;
+  border: 0;
+  margin: 0;
+  width: 1px;
+  height: 1px;
+  clip-path: inset(50%);
+  overflow: hidden;
+  white-space: nowrap;
+}

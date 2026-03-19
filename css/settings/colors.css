@@ -11,16 +11,16 @@
   --color-neutral-500: hsl(60, 3%, 60%);
   --color-neutral-600: hsl(60, 3%, 72%);
   --color-neutral-700: hsl(60, 3%, 84%);
-  --color-neutral-800: hsl(60, 3%, 98%);
+  --color-neutral-800: hsl(60, 3%, 95%);
 
   --color-green-base: oklch(85% 0.11 174);
-  --color-green-base: oklch(66% 0.11 174);
-  --color-green-base: oklch(97% 0.11 174);
+  --color-green-dark: oklch(66% 0.11 174);
+  --color-green-light: oklch(97% 0.11 174);
 
   /* incident variables: utilisées en CSS */
   --color-background-primary: var(--color-neutral-100);
 
-  --color-text-primary: var(--color-neutral-800);
+  --color-text-primary: var(--color-neutral-700);
   --color-text-secondary: var(--color-neutral-500);
   --color-text-highlight: white;
 

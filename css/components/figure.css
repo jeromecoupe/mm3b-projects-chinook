@@ -1,0 +1,14 @@
+/* ===================================
+=figure
+=================================== */
+
+.figure {
+  margin: 0;
+  padding: 0;
+}
+
+.figure-caption {
+  margin-block-start: 12px;
+  font-size: var(--fontsize-300);
+  color: var(--color-text-secondary);
+}

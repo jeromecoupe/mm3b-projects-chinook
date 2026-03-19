@@ -1,0 +1,54 @@
+/* ===================================
+=siteheader
+=================================== */
+
+.siteheader {
+  --siteheader-gap: 18px;
+  --siteheader-padding: 24px;
+
+  padding-block: var(--siteheader-padding);
+}
+
+.siteheader-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: var(--siteheader-gap);
+}
+
+/* dans un contexte de flexbox (parent en display flex) margin auto prend une fraction de l'epace disponible sur la corde à linge. Ici une seule fraction > il la mergin prend tout l'espace disponible */
+.siteheader-logo {
+  margin: 0 auto 0 0;
+}
+
+.siteheader-hamburger {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  & > img {
+    display: block;
+  }
+}
+
+/* ===================================
+=visibilité
+=================================== */
+
+.siteheader-nav {
+  display: none;
+
+  @media (width >= 1024px) {
+    display: block;
+  }
+}
+
+.siteheader-mobilenav {
+  display: block;
+
+  @media (width >= 1024px) {
+    display: none;
+  }
+}

@@ -1,0 +1,78 @@
+/* ===================================
+=mobile menu
+=================================== */
+
+.mobilemenu {
+  --mobilemenu-padding: 24px 18px;
+  --mobilemenu-gap: 18px;
+
+  box-sizing: border-box;
+
+  position: fixed;
+  inset-inline-start: 0;
+  inset-block-start: 0;
+  max-block-size: unset;
+  max-inline-size: unset;
+  margin: 0;
+  padding: var(--mobilemenu-padding);
+  border: none;
+
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: auto minmax(0, 1fr);
+  gap: var(--mobilemenu-gap);
+
+  block-size: 100%;
+  inline-size: 100%;
+
+  background-color: var(--color-accent);
+
+  transition:
+    opacity 0.2s ease-out,
+    scale 0.2s ease-out,
+    display 0.2s allow-discrete,
+    overlay 0.2s allow-discrete;
+}
+
+.mobilemenu-actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+}
+
+.mobilemenu-close {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+
+  & svg {
+    display: block;
+  }
+}
+
+.mobilemenu-main {
+  align-self: center;
+}
+
+.mobilemenu:not([open]) {
+  opacity: 0;
+  display: none;
+}
+
+.mobilemenu[open] {
+  opacity: 1;
+
+  @media (width >= 1024px) {
+    display: none;
+  }
+
+  @starting-style {
+    opacity: 0;
+  }
+}
+
+.mobilemenu::backdrop {
+  background-color: transparent;
+}

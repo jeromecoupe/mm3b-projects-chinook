@@ -9,8 +9,20 @@
 - Supprimer les marges en block start fait que les éléments sont bien sur la même ligens quand ils passent les uns à côté des autres.
 */
 
-*, 
-*::before, 
+*,
+*::before,
 *::after {
   margin-block-start: 0;
+}
+
+html {
+  scrollbar-gutter: stable;
+}
+
+button {
+  cursor: pointer;
+}
+
+:where(h1, h2, h3, h4) {
+  text-wrap: balance;
 }

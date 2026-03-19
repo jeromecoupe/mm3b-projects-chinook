@@ -7,4 +7,9 @@ body {
   padding: 0;
   background-color: var(--color-background-primary);
   color: var(--color-text-primary);
+  font-size: var(--fontsize-400);
+}
+
+body.has-menu {
+  overflow-y: hidden;
 }

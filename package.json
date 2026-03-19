@@ -1,0 +1,19 @@
+{
+  "name": "mm3b-projects-chinook",
+  "version": "1.0.0",
+  "description": "A small project",
+  "main": "index.js",
+  "scripts": {
+    "check": "npx biome check --write"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeromecoupe/mm3b-projects-chinook.git"
+  },
+  "author": "Jérôme Coupé",
+  "license": "MIT",
+  "type": "module",
+  "devDependencies": {
+    "@biomejs/biome": "2.4.7"
+  }
+}

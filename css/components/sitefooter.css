@@ -1,0 +1,13 @@
+/* ===================================
+=sitefooter
+=================================== */
+
+.sitefooter {
+  display: block;
+}
+
+.sitefooter-copyright {
+  border-block-start: 1px solid hsl(from white h s l / 12%);
+  padding-block: 18px;
+  margin: 0;
+}

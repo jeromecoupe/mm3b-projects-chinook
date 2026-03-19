@@ -12,4 +12,22 @@
 @import "base/html.css" layer(base);
 
 /* COMPONENTS: tous les styles liés à des composants bien isolés, fonctionnement avec des classes / des modifiers / etc. */
+@import "components/container.css" layer(components);
+@import "components/siteheader.css" layer(components);
+@import "components/sitecontent.css" layer(components);
+@import "components/sitefooter.css" layer(components);
+@import "components/mainnav.css" layer(components);
 @import "components/grid.css" layer(components);
+@import "components/mobilemenu.css" layer(components);
+@import "components/mobilenav.css" layer(components);
+@import "components/fluidimage.css" layer(components);
+@import "components/article.css" layer(components);
+@import "components/titles.css" layer(components);
+@import "components/figure.css" layer(components);
+@import "components/quote.css" layer(components);
+@import "components/richtext.css" layer(components);
+@import "components/modularbody.css" layer(components);
+
+/* UTILITIES: classes utilitaires */
+@import "utilities/visuallyhidden.css" layer(utilities);
+@import "utilities/margins.css" layer(utilities);

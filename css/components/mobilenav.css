@@ -1,0 +1,54 @@
+/* ===================================
+=mobilenav
+=================================== */
+
+@property --staggerindex {
+  syntax: "<number>";
+  initial-value: 0;
+  inherits: false;
+}
+
+@keyframes linkAppear {
+  from {
+    opacity: 0;
+    translate: -12px 0;
+  }
+}
+
+.mobilenav {
+  --mobilenav-link-color: var(--color-neutral-100);
+
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 6px;
+}
+
+.mobilenav-item {
+  --staggerindex: calc(sibling-index() - 1);
+
+  display: block;
+  overflow: clip;
+}
+
+.mobilenav-link {
+  --delay: var(--staggerindex);
+
+  display: block;
+  color: var(--mobilenav-link-color);
+  font-size: calc(24 / 16 * 1rem);
+  text-decoration: none;
+  line-height: 1.2;
+  font-weight: 450;
+
+  animation-name: linkAppear;
+  animation-delay: 0s;
+  animation-duration: 0.2s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: both;
+}
