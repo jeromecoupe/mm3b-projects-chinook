@@ -15,13 +15,19 @@
   margin-block-start: 0;
 }
 
+/* toujours préserver de l'espace pour les barres de défilement */
+
 html {
   scrollbar-gutter: stable;
 }
 
+/* toujours aoir le curseur interactif sur les buttons */
+
 button {
   cursor: pointer;
 }
+
+/* uniformiser la longueur des lignes de textes */
 
 :where(h1, h2, h3, h4) {
   text-wrap: balance;

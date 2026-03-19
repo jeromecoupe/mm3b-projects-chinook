@@ -3,7 +3,7 @@
 =================================== */
 
 .container {
-  --container-padding: max(18px, 3%);
+  --container-padding: max(18px, 3vi);
   --container-max-size: 1500px;
 
   max-inline-size: var(--container-max-size);
