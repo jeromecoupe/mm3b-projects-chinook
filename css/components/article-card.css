@@ -24,63 +24,67 @@ Une fois le lien .card-link survolé
 
 */
 
-.card {
+.articlecard {
   position: relative;
 }
 
-.card-link {
+.articlecard-link {
   display: grid;
   text-decoration: none;
 }
 
 /* 
-- créer un élément en début de boite .card-link
+- créer un élément en début de boite .articlecard-link
 - contenu vide
 - on le place dans la grille
 - on met le dégradé dessus
 */
-.card-link::before {
+.articlecard-link::before {
   content: "";
   grid-column: 1 / 2;
   grid-row: 1 / 2;
 
+  /* z-index pour gérer l'ordre sur l'axe des Z dans la même grille. Plus le z-index est grand, plus l'élément est proche du visiteur sur l'axe des Z */
   z-index: 2;
 
   background-image: linear-gradient(
     to top,
-    rgba(0, 0, 0, 0.7) 15%,
+    rgba(0, 0, 0, 0.66) 60px,
     transparent
   );
 }
 
-.card-media {
+.articlecard-media {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
 
   /* cacher ce qui dépasse de la boite */
   overflow: hidden;
 
+  /* z-index pour gérer l'ordre sur l'axe des Z dans la même grille. Plus le z-index est grand, plus l'élément est proche du visiteur sur l'axe des Z */
   z-index: 1;
 }
 
-.card-image {
+.articlecard-image {
   scale: 1;
   transition: all 0.2s ease-out;
 
   a:hover & {
-    scale: 1.05;
+    scale: 1.024;
   }
 }
 
-.card-text {
+.articlecard-text {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
 
+  /* z-index pour gérer l'ordre sur l'axe des Z dans la même grille. Plus le z-index est grand, plus l'élément est proche du visiteur sur l'axe des Z */
   z-index: 3;
 
   /* on aligne cette cellule de la grille en fin sur l'axe des colonnes */
   /* https://css-tricks.com/complete-guide-css-grid-layout/ */
   align-self: end;
+
   padding: 1rem;
 
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
@@ -92,21 +96,21 @@ Une fois le lien .card-link survolé
     translate 0.2s ease-out,
     opacity 0.2s ease-out;
 
-  /* idem que a:hover .card-text (le & remplace le sélecteur de base quand nesting) */
+  /* idem que a:hover .articlecard-text (le & remplace le sélecteur de base quand nesting) */
   a:hover & {
     translate: 0 0;
     opacity: 1;
   }
 }
 
-.card-name {
+.articlecard-title {
   margin: 0;
   font-family: var(--fontstack-alt);
   font-weight: 500;
   color: var(--color-text-highlight);
 }
 
-.card-role {
+.articlecard-role {
   margin: 0;
   color: var(--color-text-secondary);
 }

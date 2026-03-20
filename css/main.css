@@ -27,7 +27,7 @@
 @import "components/quote.css" layer(components);
 @import "components/richtext.css" layer(components);
 @import "components/modularbody.css" layer(components);
-@import "components/card.css" layer(components);
+@import "components/article-card.css" layer(components);
 
 /* UTILITIES: classes utilitaires */
 @import "utilities/visuallyhidden.css" layer(utilities);
