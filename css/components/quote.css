@@ -14,6 +14,7 @@
   font-style: italic;
   line-height: 1.2;
   font-size: clamp(33 / 16 * 1rem, 1.581rem + 2.202vi, 57 / 16 * 1rem);
+  color: var(--color-text-highlight);
 
   & p:last-child {
     margin-block-end: 0.42em;

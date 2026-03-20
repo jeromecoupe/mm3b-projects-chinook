@@ -7,12 +7,12 @@
   --fontstack-alt: "Recia", "Georgia", serif;
 
   --fontsize-100: calc(11 / 16 * 1rem);
-  --fontsize-200: calc(13 / 16 * 1rem);
-  --fontsize-300: calc(14 / 16 * 1rem);
-  --fontsize-400: clamp(1rem, 0.96rem + 0.183vi, 18 / 16 * 1rem);
-  --fontsize-500: clamp(18 / 16 * 1rem, 1.085rem + 0.183vi, 20 / 16 * 1rem);
-  --fontsize-600: clamp(20 / 16 * 1rem, 1.19rem + 0.275vi, 23 / 16 * 1rem);
-  --fontsize-700: clamp(23 / 16 * 1rem, 1.377rem + 0.275vi, 26 / 16 * 1rem);
-  --fontsize-800: clamp(26 / 16 * 1rem, 1.565rem + 0.275vi, 29 / 16 * 1rem);
-  --fontsize-900: clamp(29 / 16 * 1rem, 1.752rem + 0.275vi, 32 / 16 * 1rem);
+  --fontsize-200: calc(14 / 16 * 1rem);
+  --fontsize-300: calc(16 / 16 * 1rem);
+  --fontsize-400: calc(18 / 16 * 1rem);
+  --fontsize-500: clamp(20 / 16 * 1rem, 1.19rem + 0.275vi, 23 / 16 * 1rem);
+  --fontsize-600: clamp(23 / 16 * 1rem, 1.377rem + 0.275vi, 26 / 16 * 1rem);
+  --fontsize-700: clamp(26 / 16 * 1rem, 1.565rem + 0.275vi, 29 / 16 * 1rem);
+  --fontsize-800: clamp(36 / 16 * 1rem, 1.752rem + 0.275vi, 41 / 16 * 1rem);
+  --fontsize-900: clamp(41 / 16 * 1rem, 2.462rem + 0.459vi, 46 / 16 * 1rem);
 }
